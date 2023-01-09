@@ -6,32 +6,113 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:orientation="vertical">
-
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="My Login"
-        android:gravity="center"
-        android:textSize="30dp"
-        android:layout_marginTop="50dp"/>
-    <EditText
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/hightxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/txtview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="0"
+            android:textSize="64dp" />
+    </LinearLayout>
+    <GridLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Username"
-        android:id="@+id/et1">
+        android:columnCount="5">
+        <Button
+            android:id="@+id/btn7"
+            android:text="7"
+            android:textSize="18dp" />
 
-    </EditText>
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/et2"
-        android:hint="Passsword"/>
-    <Button
-        android:id="@+id/bt1"
-        android:layout_width="150dp"
-        android:layout_height="100dp"
-        android:text="Login"
-        android:layout_marginLeft="150dp">
+        <Button
+            android:id="@+id/btn4"
+            android:text="4"
+            android:textSize="18dp" />
 
-    </Button>
+        <Button
+            android:id="@+id/btn1"
+            android:text="1"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/btn0"
+         android:layout_columnSpan="2"
+            android:layout_gravity="fill_horizontal"
+            android:text="0"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/btnc"
+            android:text="C"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/btn8"
+            android:text="8"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/btn5"
+            android:text="5"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:text="2"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/btn9"
+            android:text="9"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/btn6"
+            android:text="6"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/btn3"
+            android:text="3"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/btndot"
+            android:text="."
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/btndiv"
+            android:text="/"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/btnmul"
+            android:text="X"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/btnsub"
+            android:text="-"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/btnadd"
+            android:text="+"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/btneq"
+            android:text="="
+            android:textSize="24dp" />
+    </GridLayout>
 </LinearLayout>
